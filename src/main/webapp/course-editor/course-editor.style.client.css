@@ -1,0 +1,20 @@
+h1 {
+    color:white;
+    background-color: red;
+ }
+h2 {
+    color:yellow;
+    background-color: blue;
+ }
+#wbdev-module-list {
+    background-color: cyan;
+}
+.wbdev-module{
+    background-color: lightgray;
+}
+.wbdev-bold{
+    font-weight: bolder;
+}
+.wbdev-module.wbdev-selected{
+    background-color:darkgray;
+}
