@@ -18,7 +18,7 @@
 <h2 id="wbdev-title">
 
     <ul class="nav nav-pills">
-        <li class ="col-1">
+        <li class="col-1 wbdv-course-editor wbdv-close">
             <i class="fa fa-times"></i>
         </li>
 
@@ -28,46 +28,45 @@
             </a>
 
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
+        <li class="nav-item col-1">
+            <a class="nav-link wbdv-header" href="#">
                 Build
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link " href="#">
+        <li class="nav-item col-1">
+            <a class="nav-link wbdv-header wbdv-page-tab" href="#">
                 Pages
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link " href="#">
+        <li class="nav-item col-1">
+            <a class="nav-link wbdv-header" href="#">
                 Theme
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link " href="#">
+        <li class="nav-item col-1">
+            <a class="nav-link wbdv-header" href="#">
                 Store
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link " href="#">
+        <li class="nav-item col-1">
+            <a class="nav-link wbdv-header" href="#">
                 Apps
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link " href="#">
+        <li class="nav-item col-2">
+            <a class="nav-link wbdv-header" href="#">
                 Settings
             </a>
         </li>
-        <li>
+        <li class="col-1">
             <i class="fa fa-plus"></i>
         </li>
     </ul>
 </h2>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row row-widget">
 
-        <div class="col-4">
-
+        <div class="col-4 box">
             <ul class="list-group wbdv-module-list"
                 id="wbdv-module-list">
                 <li class="list-group-item wbdv-module-item">Module 1 - jQuery</li>
@@ -80,7 +79,6 @@
             </ul>
 
         </div>
-
         <div class="col-8">
 
             <ul class="nav nav-pills">
@@ -109,10 +107,83 @@
                     <i class="fa fa-plus-square" style="font-size:32px;"></i>
                 </li>
             </ul>
+            <div class = "row">
+                <div class ="col-9">
+
+
+                </div>
+                <button class="btn btn-success btn-block wbdv-button wbdv-save"
+                        onclick="">Save
+                </button>
+
+
+                <div class="custom-control custom-switch switch-large">
+                    <label class="custom-control-label" for="customSwitches">Preview</label>
+                    <input type="checkbox" class="custom-control-input" id="customSwitches">
+
+                </div>
+
+            </div>
+            <div class="row top-row-heading">
+                <a class = "col-1">
+
+                </a>
+
+                <a class="heading-widget-title">
+                    Heading Widget
+                </a>
+
+                <a class = "col-4">
+
+                </a>
+                <i class="fa fa-arrow-up"></i>
+                <i class="fa fa-arrow-down"></i>
+
+
+            </div>
+            <div>
+                <input class="form-control wbdv-field"
+                       placeholder="Heading Widget"/>
+            </div>
+
+            <div>
+                <select class="form-control wbdv-field wbdv-dropdown">
+                    <option>
+                        Heading 1
+                    </option>
+                    <option>
+                        Heading 2
+                    </option>
+                    <option>
+                        Heading 3
+                    </option>
+                </select>
+            </div>
+
+            <div>
+                <input class="form-control wbdv-field"
+                       placeholder="Widget Name"/>
+            </div>
+
+            <div>
+                <a class ="preview-word">
+                    Preview
+                </a>
+            </div>
+
+            <div>
+                <a class ="heading-text">
+                    Heading Text
+                </a>
+            </div>
+
         </div>
+
     </div>
 
 
 </div>
+
+
 </body>
 </html>

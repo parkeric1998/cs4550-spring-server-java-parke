@@ -1,6 +1,7 @@
 #wbdev-title{
     color:white;
-    background-color: gray;
+    background-color: #464B4F;
+    margin:0px;
  }
 h1{
     color:white;
@@ -23,6 +24,43 @@ h2 {
     background-color:darkgray;
 }
 
-.nav-link{
+.nav-link.wbdv-header{
     color: white;
 }
+
+.box{
+    border-right:1px solid darkgray;
+    border-bottom:1px solid darkgray;
+    background-color:#363B3E;
+}
+
+.wbdv-save{
+    width:60px;
+    height:35px;
+}
+
+
+.custom-switch{
+    size: 26px;
+}
+
+
+.heading-widget-title{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.top-row-heading{
+    border-top:1px solid darkgray;
+}
+
+.preview-word{
+    font-size: 30px;
+}
+
+.heading-text{
+    font-size: 40px;
+
+}
+
+
