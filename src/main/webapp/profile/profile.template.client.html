@@ -11,6 +11,9 @@
 <body>
 <div class="container">
     <h1>Profile</h1>
+    <div class="alert alert-success wbdv-message" role="alert">
+        Profile Update Success!!!
+    </div>
 
     <div class="form-group row">
         <label for="username" class="col-sm-2 col-form-label">
@@ -18,7 +21,7 @@
         <div class="col-sm-10">
             <input type="text"
                    readonly
-                   class="form-control"
+                   class="form-control wbdv-field wbdv-username"
                    id="username"
                    value="alice">
         </div>
@@ -28,7 +31,7 @@
         <label for="password" class="col-sm-2 col-form-label">
             Password</label>
         <div class="col-sm-10">
-            <input class="form-control"
+            <input class="form-control wbdv-field wbdv-password"
                    id="password"
                    type="password"
                    placeholder="123qwe#$%"/>
@@ -39,7 +42,7 @@
         <label for="phone" class="col-sm-2 col-form-label">
             Phone</label>
         <div class="col-sm-10">
-            <input class="form-control"
+            <input class="form-control wbdv-field wbdv-phone"
                    id="phone"
                    placeholder="(555) 123-4324"/>
         </div>
@@ -49,7 +52,7 @@
         <label for="email" class="col-sm-2 col-form-label">
             Email</label>
         <div class="col-sm-10">
-            <input class="form-control"
+            <input class="form-control wbdv-field wbdv-email"
                    id="email"
                    title="please provide your email"
                    placeholder="alice@wonderland.com"
@@ -61,7 +64,7 @@
         <label for="dob" class="col-sm-2 col-form-label">
             DOB</label>
         <div class="col-sm-10">
-            <input class="form-control"
+            <input class="form-control wbdv-field wbdv-dob"
                    id="dob"
                    placeholder="mm/dd/yyyy"
                    type="date"/>
@@ -72,7 +75,7 @@
         <label class="col-sm-2 col-form-label">
             Role </label>
         <div class="col-sm-10">
-            <select class="form-control">
+            <select class="form-control wbdv-field wbdv-role">
                 <option>
                     Faculty
                 </option>
@@ -89,18 +92,22 @@
     <div class="form-group row">
         <label class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
-            <button class="btn btn-success btn-block wbdv-update">Update</button>
+            <button class="btn btn-success btn-block xwbdv-button wbdv-update"
+                    onclick="">Update</button>
         </div>
+
     </div>
 
     <div class="form-group row">
         <label class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
-            <button class="btn btn-danger btn-block wbdv-logout">Logout</button>
+            <a class="btn btn-danger btn-block wbdv-button wbdv-logout"
+               href="http://localhost:8080/index.html"
+               id="wbdv-logout">
+                Logout
+            </a>
         </div>
     </div>
-
-
 </div>
 </body>
 </html>

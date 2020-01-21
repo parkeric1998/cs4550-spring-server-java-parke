@@ -1,83 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Course Editor</title>
-        <link
-                href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css "
-                rel ="stylesheet"
-        />
-        <link href ="course-editor.style.client.css"
-                rel="stylesheet"/>
-        <style>
-            h1 {
-            background-color: yellow
-            }
+<head>
+    <meta charset="UTF-8">
+    <title>Course Editor</title>
+    <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css "
+            rel="stylesheet"
+    />
+    <link href="course-editor.style.client.css"
+          rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+<h2 id="wbdev-title">
 
+    <ul class="nav nav-pills">
+        <li class ="col-1">
+            <i class="fa fa-times"></i>
+        </li>
 
-        </style>
-    </head>
-    <body>
-    <h1>
-        Course Editor
-    </h1>
-        <div class="container-fluid">
-            <div class ="row">
-                <div class ="col-4">
-                    <h2 id="wbdev-module-list">Module List</h2>
+        <li class="nav-item col-3 wbdv-course-title">
+            <a>
+                CS5610 - WebDev
+            </a>
 
-                    <ul class ="list-group">
-                        <li class ="list-group-item">Module 1</li>
-                        <li class ="list-group-item active">Module 2</li>
-                        <li class ="list-group-item">Module 3</li>
-                    </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                Build
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">
+                Pages
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">
+                Theme
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">
+                Store
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">
+                Apps
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">
+                Settings
+            </a>
+        </li>
+        <li>
+            <i class="fa fa-plus"></i>
+        </li>
+    </ul>
+</h2>
+<div class="container-fluid">
+    <div class="row">
 
-                </div>
+        <div class="col-4">
 
-                <div class ="col-8">
-                    <h2>Lessons</h2>
+            <ul class="list-group wbdv-module-list"
+                id="wbdv-module-list">
+                <li class="list-group-item wbdv-module-item">Module 1 - jQuery</li>
+                <li class="list-group-item wbdv-module-item">Module 2 - React</li>
+                <li class="list-group-item wbdv-module-item">Module 3 - Redux</li>
+                <li class="list-group-item wbdv-module-item">Module 4 - Native</li>
+                <li class="list-group-item wbdv-module-item">Module 5 - Angular</li>
+                <li class="list-group-item wbdv-module-item">Module 6 - Node</li>
+                <li class="list-group-item wbdv-module-item">Module 7 - Mongo</li>
+            </ul>
 
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                List 1
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                List 2
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                List 3
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-
-        <h2>Topics</h2>
-
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    Topic 1
-                </a>
-
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">
-                    Topic 2
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">
-                    Topic 3
-                </a>
-            </li>
-        </ul>
         </div>
-    </body>
+
+        <div class="col-8">
+
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Topic 1
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Topic 2
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Topic 3
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Topic 4
+                    </a>
+                </li>
+                <li>
+                    <i class="fa fa-plus-square" style="font-size:32px;"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+</body>
 </html>

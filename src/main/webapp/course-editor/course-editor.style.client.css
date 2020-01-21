@@ -1,20 +1,28 @@
-h1 {
+#wbdev-title{
     color:white;
-    background-color: red;
+    background-color: gray;
+ }
+h1{
+    color:white;
+    background-color: gray;
  }
 h2 {
     color:yellow;
     background-color: blue;
  }
-#wbdev-module-list {
-    background-color: cyan;
+#wbdv-module-list {
+    background-color: gray;
 }
-.wbdev-module{
-    background-color: lightgray;
+#wbdv-module-item{
+    background-color: gray;
 }
 .wbdev-bold{
     font-weight: bolder;
 }
 .wbdev-module.wbdev-selected{
     background-color:darkgray;
+}
+
+.nav-link{
+    color: white;
 }

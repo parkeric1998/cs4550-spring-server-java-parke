@@ -1,0 +1,24 @@
+#wbdv-username{
+    color:white;
+ }
+
+ #wbdv-password{
+     color:white;
+  }
+
+#wbdv-login{
+   color:white;
+   background-color:blue;
+}
+
+#wbdv-forgot-password{
+   color:white;
+}
+
+#wbdv-register{
+   color:blue;
+}
+
+#wbdv-cancel{
+   color:red;
+}

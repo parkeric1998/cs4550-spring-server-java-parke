@@ -1,0 +1,91 @@
+#wbdv-hamburger{
+    margin-left:30px;
+}
+
+#wbdv-course-header{
+    color:white;
+    background-color: blue;
+ }
+
+.wbdv-course-manager{
+    margin-left:20px;
+}
+
+.wbdv-new-course{
+    width:300%;
+    font-style:italic;
+}
+
+.wbdv-add-course{
+    color:red;
+    margin-left:395px;
+}
+
+#wbdv-title-row{
+      color:gray;
+      background-color: #F0F0F0;
+}
+
+.wbdv-title{
+    margin-left:100px;
+ }
+
+
+.wbdv-header.wbdv-owner{
+     margin-left:400px;
+     font-size:28px;
+
+}
+.wbdv-last-modified{
+
+    margin-left:40px;
+    font-size:15px;
+    margin-top:10px;
+}
+
+.wbdv-grid-layout{
+    color:gray;
+    margin-left:20px;
+    font-size: 12px;
+}
+
+.wbdv-sort{
+    margin-left:40px;
+}
+.wbdv-course-filler{
+    background-color: #F0F0F0;
+}
+
+.wbdv-course{
+      color:black;
+      background-color: white;
+}
+.wbdv-icon{
+    color: blue;
+    background-color:white;
+}
+
+.wbdv-row.wbdv-owner{
+    color:#B8B8B8;
+    margin-left:150px;
+}
+
+.wbdv-row.wbdv-modified-date{
+    margin-left:160px;
+}
+
+.wbdv-row.wbdv-title{
+    color: black;
+}
+
+.wbdv-row.wbdv-button.wbdv-delete{
+    color: gray;
+    margin-left:330px;
+}
+.top-row{
+    border-top:1px solid darkgray;
+}
+
+.wbdv-row.wbdv-course{
+    border-top:0.5px solid darkgray;
+}

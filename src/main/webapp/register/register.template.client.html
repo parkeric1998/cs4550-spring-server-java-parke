@@ -7,8 +7,11 @@
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css "
             rel="stylesheet"
     />
+    <link href="register.style.client.css"
+          rel="stylesheet"/>
 </head>
 <body>
+
 <div class="container">
     <h1>Register</h1>
 
@@ -35,7 +38,7 @@
         <label for="password-verify" class="col-sm-2 col-form-label">
             Verify Password </label>
         <div class="col-sm-10">
-            <input type="password" class="form-control wbdv-field wbdv-password"
+            <input type="password" class="form-control wbdv-field wbdv-password-verify"
                    id="password-verify" placeholder="123qwe#$%">
         </div>
     </div>
@@ -43,10 +46,22 @@
     <div class="form-group row">
         <label for="register" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
-            <button id="register" class="btn btn-primary btn-block wbdv-login">Sign up</button>
+            <a class="btn btn-primary btn-block wbdv-button wbdv-register"
+               href="http://localhost:8080/profile/profile.template.client.html"
+               id="register"
+               role="button">Sign up</a>
             <div class="row">
                 <div class="col-6">
-                    <a href="http://localhost:8080/login/login.template.client.html#">Login</a>
+                    <a class="wbdv-link wbdv-login"
+                       id="wbdv-login"
+                       href="http://localhost:8080/login/login.template.client.html#">Login</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <a href="http://localhost:8080/index.html"
+                       class="wbdv-cancel"
+                       id="wbdv-cancel">Cancel</a>
                 </div>
             </div>
         </div>
