@@ -7,16 +7,19 @@ h1{
     color:white;
     background-color: gray;
  }
-h2 {
-    color:yellow;
-    background-color: blue;
- }
+
 #wbdv-module-list {
-    background-color: gray;
+    background-color:#363B3E;
 }
 #wbdv-module-item{
-    background-color: gray;
+
+    background-color:#363B3E;
 }
+
+.wbdv-module-item{
+    margin:7px;
+}
+
 .wbdev-bold{
     font-weight: bolder;
 }
@@ -52,6 +55,8 @@ h2 {
 
 .top-row-heading{
     border-top:1px solid darkgray;
+
+
 }
 
 .preview-word{
@@ -63,4 +68,51 @@ h2 {
 
 }
 
+.row-widget{
+border-bottom:1px solid darkgray;
+}
+
+.fa-arrow-up{
+    width: 30px;
+    height: 30px;
+    box-sizing:border-box;
+    background-color: orange;
+    margin-right:7px;
+
+}
+
+.fa-arrow-down{
+    background-color: orange;
+    width: 30px;
+    height: 30px;
+    box-sizing:border-box;
+
+}
+
+.wbdv-dropdown-widget{
+    margin-left:5px;
+}
+
+.close-widget{
+    margin-left:10px;
+    box-sizing:border-box;
+    background-color: red;
+    width: 29px;
+    height: 29px;
+    color: white;
+}
+
+.module-row{
+    Background-color:#4C5155;
+    color: white;
+}
+
+.module-add{
+     Background-color:#363B3E;
+     color: white;
+
+ }
+.wbdv-module-item-delete-btn{
+    margin-top:3px;
+}
 

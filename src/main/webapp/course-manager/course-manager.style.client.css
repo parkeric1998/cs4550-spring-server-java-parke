@@ -26,31 +26,29 @@
       background-color: #EEEEEE;
 }
 
-.wbdv-title{
-    margin-left:100px;
- }
+.wbdv-header.wbdv-title{
+    margin-left:20px;
+}
+
 
 
 .wbdv-header.wbdv-owner{
-     margin-left:400px;
+
      font-size:28px;
 
 }
 .wbdv-last-modified{
 
-    margin-left:40px;
     font-size:15px;
     margin-top:10px;
 }
 
 .wbdv-grid-layout{
     color:gray;
-    margin-left:20px;
     font-size: 12px;
 }
 
 .wbdv-sort{
-    margin-left:40px;
 }
 .wbdv-course-filler{
     background-color: #F0F0F0;
@@ -67,12 +65,11 @@
 
 .wbdv-row.wbdv-owner{
     color:#B8B8B8;
-    margin-left:150px;
+    margin-left:40px;
+
 }
 
-.wbdv-row.wbdv-modified-date{
-    margin-left:160px;
-}
+
 
 .wbdv-row.wbdv-title{
     color: black;
