@@ -57,14 +57,14 @@
         for(let u in users) {
             let user = users[u]
 
-            $deleteBtn = $("<button>Delete</button>")
+            $deleteBtn = $("#wbdv-remove")
             $deleteBtn.click(() => deleteUser(u))
 
-            $editBtn = $("<button>Edit</button>")
-            $editBtn.click(() => editUser(u))
+//            $editBtn = $("<button>Edit</button>")
+//            $editBtn.click(() => editUser(u))
 
-            tbody.append($deleteBtn)
-            tbody.append($editBtn)
+//            tbody.append($deleteBtn)
+//            tbody.append($editBtn)
 
             const rowClone = rowTemplate.clone();
             rowClone.removeClass('wbdv-hidden');
@@ -110,6 +110,11 @@
         $updateBtn.click(updateUser)
 
         rowTemplate = jQuery('.wbdv-template');
+
+//        rowTemplate.classList.remove("wbdv-hidden")
+//
+//        hideRowTemplate = jQuery('.wbdv-hidden').hide();
+
         createUserBtn = jQuery('.wbdv-create');
         tbody = jQuery('tbody');
 
@@ -122,8 +127,5 @@
                 renderUsers()
             })
     }
-
-
-
 
 })()
