@@ -15,6 +15,7 @@
     ]
 
     function deleteUser(index){
+    console.log("deleting", index)
         let user = users[index]
         let userId = user._id
 
@@ -53,12 +54,35 @@
 
 
     function renderUsers() {
-        tbody.empty()
+        let rows = $('.wbdv-form').get()
+//        rows.slice(0, rows.length - 1)
+        console.log("resetting", users, rows)
         for(let u in users) {
             let user = users[u]
+            let deleteBtn = $(`<i id=${user._id}_remove class="fa-2x fa fa-times wbdv-remove"></i>`)
+            deleteBtn.click(() => deleteUser(u))
+            let userRow = $(`
+                <tr class="wbdv-template wbdv-user">
+                    <td class="wbdv-username">${user.username}</td>
+                    <td>&nbsp;</td>
+                    <td class="wbdv-first-name">${user.firstName || ""}</td>
+                    <td class="wbdv-last-name">${user.lastName}</td>
+                    <td class="wbdv-role">${user.role}</td>
+                    <td class="wbdv-actions">
+                        <span class="float-right">
+                           ${deleteBtn.parseHTML()}
+                          <i id=${user._id}_edit class="fa-2x fa fa-pencil wbdv-edit"></i>
+                        </span>
+                    </td>
+                </tr>
+             `)
 
-            $deleteBtn = $("#wbdv-remove")
-            $deleteBtn.click(() => deleteUser(u))
+//             var element = $(`<p>Hello</p>`)
+//            element.html(Hello)
+
+
+//            $deleteBtn = $("#wbdv-remove")
+//            $deleteBtn.click(() => deleteUser(u))
 
 //            $editBtn = $("<button>Edit</button>")
 //            $editBtn.click(() => editUser(u))
@@ -66,11 +90,27 @@
 //            tbody.append($deleteBtn)
 //            tbody.append($editBtn)
 
-            const rowClone = rowTemplate.clone();
-            rowClone.removeClass('wbdv-hidden');
-            rowClone.find('.wbdv-username').html(user.username);
-            tbody.append(rowClone);
-        }
+//            const rowClone = rowTemplate.clone();
+//            rowClone.removeClass('wbdv-hidden');
+//            rowClone.find('.wbdv-username').html(user.username);
+//            tbody.append(userRow);
+
+              rows.push(userRow.get(0))
+               $userList.html(rows)
+              $(`${user._id}_remove`).click(() => deleteUser(u))
+              }
+
+
+
+//                                $(`${user._id}_remove`).click(() => deleteUser(u))
+               $createBtn = $("#createBtn")
+              $createBtn.click(createUser)
+
+              $updateBtn = $("#updateBtn")
+              $updateBtn.click(updateUser)
+
+
+
     }
 
     function createUser() {
@@ -87,7 +127,6 @@
 //            renderUsers()
             findAllUsers()
         })
-
 
 
     }
@@ -109,23 +148,25 @@
         $updateBtn = $("#updateBtn")
         $updateBtn.click(updateUser)
 
-        rowTemplate = jQuery('.wbdv-template');
+        $userList = $("#userList")
+
+//        rowTemplate = jQuery('.wbdv-template');
 
 //        rowTemplate.classList.remove("wbdv-hidden")
 //
 //        hideRowTemplate = jQuery('.wbdv-hidden').hide();
 
-        createUserBtn = jQuery('.wbdv-create');
-        tbody = jQuery('tbody');
+        createUserBtn = $('.wbdv-create');
+        tbody = $('tbody');
 
         createUserBtn.click(createUser);
-
-        userService
-            .findAllUsers()
-            .then(theusers => {
-                users = theusers
-                renderUsers()
-            })
+        findAllUsers()
+//        userService
+//            .findAllUsers()
+////            .then(theusers => {
+////                users = theusers
+////                renderUsers()
+////            })
     }
 
 })()
