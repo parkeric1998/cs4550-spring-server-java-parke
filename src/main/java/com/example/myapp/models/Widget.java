@@ -1,12 +1,29 @@
 package com.example.myapp.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="widgets")
 public class Widget {
-    private String id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String title;
 
     private String type = "HEADING";
-    private String topicId;
     private int size = 2;
+
+    public Topic getTopic() {
+        return topic;
+    }
+
+    public void setTopic(Topic topic) {
+        this.topic = topic;
+    }
+
+    @ManyToOne
+    private Topic topic;
 
     public int getSize() {
         return size;
@@ -14,14 +31,6 @@ public class Widget {
 
     public void setSize(int size) {
         this.size = size;
-    }
-
-    public String getTopicId() {
-        return topicId;
-    }
-
-    public void setTopicId(String topicId) {
-        this.topicId = topicId;
     }
 
     public String getType() {
@@ -38,17 +47,17 @@ public class Widget {
 
     }
 
-    public Widget(String id, String title, String type) {
+    public Widget(Integer id, String title, String type) {
         this.id = id;
         this.title = title;
         this.type = type;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
