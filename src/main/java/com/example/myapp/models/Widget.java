@@ -1,5 +1,7 @@
 package com.example.myapp.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 @Entity
@@ -23,6 +25,7 @@ public class Widget {
     }
 
     @ManyToOne
+    @JsonIgnore
     private Topic topic;
 
     public int getSize() {
